@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="restassured.bookflights">
+        <methods>
+          <include name="setUp"/>
+          <include name="Getflight_details"/>
+        </methods>
+      </class> <!-- restassured.bookflights -->
+      <class name="restassured.login">
+        <methods>
+          <include name="setUp"/>
+          <include name="register_user"/>
+        </methods>
+      </class> <!-- restassured.login -->
+      <class name="restassured.getflights">
+        <methods>
+          <include name="setUp"/>
+          <include name="Getflights"/>
+        </methods>
+      </class> <!-- restassured.getflights -->
+      <class name="restassured.completebookings">
+        <methods>
+          <include name="setUp"/>
+          <include name="complete_booking"/>
+        </methods>
+      </class> <!-- restassured.completebookings -->
+      <class name="restassured.postuser">
+        <methods>
+          <include name="setUp"/>
+          <include name="register_user"/>
+        </methods>
+      </class> <!-- restassured.postuser -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
